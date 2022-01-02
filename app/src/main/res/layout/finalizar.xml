@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/volver2"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:background="@drawable/boton_redondeado"
+        android:onClick="volveratras"
+        android:text="Volver"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copypaste"
+        app:layout_constraintVertical_bias="0.422" />
+
+    <TextView
+        android:id="@id/finishText"
+        android:layout_width="wrap_content"
+        android:layout_height="107.0dip"
+        android:padding="10.0sp"
+        android:text="@string/finishtext"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <Button
+        android:id="@id/copypaste"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:background="@drawable/boton_redondeado"
+        android:onClick="terminar"
+        android:text="@string/copiar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/finishText"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <TextView
+        android:id="@id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/tu_rne_es"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/copypaste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishText"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@id/run2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="24.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/copypaste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/run"
+        app:layout_constraintVertical_bias="0.654" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

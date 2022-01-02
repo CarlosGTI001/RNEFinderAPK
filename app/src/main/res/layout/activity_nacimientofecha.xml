@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/bien"
+        android:layout_width="407dp"
+        android:layout_height="48dp"
+        android:paddingStart="10.0dip"
+        android:text="Muy bien,"
+        android:textColor="#ff000000"
+        android:textSize="24.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/adlayoutfecha"
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volver"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <TextView
+        android:id="@id/textView2"
+        android:layout_width="413.0dip"
+        android:layout_height="150.0dip"
+        android:paddingStart="10.0dip"
+        android:text="@string/ahora_solo_falta_tu_fecha_de_nacimiento_esto_lo_har_s_presionando_este_bot_n_de_abajo_y_usando_el_selector_de_fecha"
+        android:textColor="#ff000000"
+        android:textSize="24.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/we" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fecha_seleccionada" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.497" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.383" />
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/fecha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fecha1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.515" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@id/pickDateBtn"
+        android:layout_width="149.0dip"
+        android:layout_height="145.0dip"
+        android:background="@drawable/boton_redondeado"
+        android:text="@string/pick_date"
+        android:textAllCaps="false"
+        android:textColor="#ffffffff"
+        android:textSize="24.0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:background="@drawable/boton_redondeado"
+        android:onClick="volveratras"
+        android:text="Volver"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickDateBtn"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/continuar"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Continuar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickDateBtn"
+        app:layout_constraintVertical_bias="0.176" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
