@@ -108,4 +108,10 @@
     <string name="year">1900–2017</string>
     <string name="yeartext">Ingresa el Año</string>
     <string name="title_activity_c2do">activity_c2do</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="mobno">Mobile No.</string>
+    <string name="reg_no">Reg</string>
 </resources>

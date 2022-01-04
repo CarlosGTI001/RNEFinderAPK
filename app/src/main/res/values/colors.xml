@@ -96,4 +96,7 @@
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6ffffff</color>
     <color name="white">#ffffffff</color>
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
 </resources>
