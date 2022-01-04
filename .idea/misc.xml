@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_c2d.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_dashboard2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
       </map>
     </option>
   </component>

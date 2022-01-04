@@ -1,21 +1,10 @@
 package com.carlosgti001.rnegen;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-
-import androidx.appcompat.app.AlertDialog;
+import android.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.unity3d.ads.IUnityAdsListener;
-import com.unity3d.ads.UnityAds;
-import com.unity3d.services.banners.IUnityBannerListener;
-import com.unity3d.services.banners.UnityBanners;
-import com.unity3d.services.banners.view.BannerPosition;
 
 public class nameApellido extends AppCompatActivity {
 
@@ -26,10 +15,6 @@ public class nameApellido extends AppCompatActivity {
     EditText nombre;
     EditText apellido1;
     EditText apellido2;
-    private final String bannerAdPlacement = "Banner_Android";
-    String gameID = "4056667";
-    boolean testMode = false;
-    private LinearLayout banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,47 +22,15 @@ public class nameApellido extends AppCompatActivity {
 
         setContentView(R.layout.activity_dashboard2);
         super.onCreate(savedInstanceState);
+        Toolbar tool = findViewById(R.id.toolbar);
+        setActionBar(tool);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         UnityAds.initialize(nameApellido.this, gameID);
 
-        banner = findViewById(R.id.adLayout);
+        //banner = findViewById(R.id.adLayout);
         nombre = findViewById(R.id.name);
 
-        IUnityBannerListener iUnityBannerListener = new IUnityBannerListener() {
-            @Override
-            public void onUnityBannerLoaded(String s, View view) {
-                ((ViewGroup)findViewById(R.id.adLayout)).removeView(view);
-                ((ViewGroup)findViewById(R.id.adLayout)).addView(view);
-
-            }
-
-            @Override
-            public void onUnityBannerUnloaded(String s) {
-
-            }
-
-            @Override
-            public void onUnityBannerShow(String s) {
-
-            }
-
-            @Override
-            public void onUnityBannerClick(String s) {
-
-            }
-
-            @Override
-            public void onUnityBannerHide(String s) {
-
-            }
-
-            @Override
-            public void onUnityBannerError(String s) {
-
-            }
-        };
-        UnityBanners.setBannerListener(iUnityBannerListener);
-        UnityBanners.setBannerPosition(BannerPosition.TOP_CENTER);
-        UnityBanners.loadBanner(nameApellido.this, bannerAdPlacement);
 
 
 
@@ -90,11 +43,14 @@ public class nameApellido extends AppCompatActivity {
 
             }
         });
+
+         */
     }
+
 
     public void obtenerdatos(View v)
     {
-        if(nombre.getText().toString().isEmpty() || apellido1.getText().toString().isEmpty())
+      /*  if(nombre.getText().toString().isEmpty() || apellido1.getText().toString().isEmpty())
         {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("No puedes dejar el primer nombre ni el primer apellido vacio, rellenenlos porfavor.")
@@ -117,6 +73,6 @@ public class nameApellido extends AppCompatActivity {
             intent.putExtra("NAA", dato1);
             intent.putExtra("nombre", nameString);
             startActivity(intent);
-        }
+        }*/
     }
 }
